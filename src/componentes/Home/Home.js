@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.scss';
-import {Link} from 'react-router-dom';
-import Criança from '../imagens/Criança.jpg';
+import { Link } from 'react-router-dom';
+import Criança from '../../imagens/crianca.webp';
 
 const Home = () => {
     return (
@@ -9,8 +9,7 @@ const Home = () => {
     <div className="Home">
         <Link to="/Home"><>Home</></Link>
         <Link to="/Parceria"><>Parceria</></Link>
-        <Link to="/Doar"><>Doar</></Link>
-        <Link to="/Cadastro"><button>Cadastro</button></Link>
+        <Link to="/Cadastro"><button>Cadastre-se</button></Link>
     </div>
     <div className="container">
 
