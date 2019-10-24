@@ -1,5 +1,5 @@
 import React, { useState, } from "react";
-import Input from '../../componentes/';
+import Input from '../../componentes/Input/Input.js';
 
 
 
