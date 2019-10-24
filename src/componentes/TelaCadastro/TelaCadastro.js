@@ -1,7 +1,6 @@
 import React from 'react';
-import './TelaCadastro.scss'
-import Container from './Container.js';
-//import i from '../imagem/multidão3.jpg';
+import './TelaCadastro.scss';
+import Container from '../../componentes/Container/Container.js';
 
 
 const TelaCadastro = () => {
