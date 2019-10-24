@@ -1,7 +1,7 @@
 import React from 'react';
 import './Container.scss'
 import {Link} from 'react-router-dom';
-import Botao from '../Botao.js';
+import Botao from '../../componentes/Botao/Botao.js';
 
 const Container = ({texto, subTexto, doador, escola}) => {
   

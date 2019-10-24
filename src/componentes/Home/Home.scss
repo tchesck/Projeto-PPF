@@ -4,16 +4,7 @@ body{
     background-color: rgba(0, 0, 0, 0.644);
     overflow: hidden;
 }
-.Home{
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    background-color: rgba(0, 0, 0, 0.836);
-    height:100%;
-    width: 100%;
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-}
+
 a{
     color: aliceblue;
     text-decoration: none;
@@ -41,7 +32,7 @@ Button{
 }
 
 .container{
-    background-color: rgba(255, 255, 255, 0.89);
+    background-color: rgb(239, 238, 241);
     display: flex;
     width: 100%;
     height: 100%;
@@ -50,24 +41,28 @@ Button{
 
 .Imagem_1{
     width: 50%;
-    height: 40%;    
+    height: 100%;    
 }
 
 .Imagem_1 img{
     width: 100%;
+    height: 91vh;    
 }
 
 .textoContainer {
     width: 47%;
     height: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
 .texto{
     width: 50%;
     text-align: right;
+    p{
+        text-align: center;
+    }
 }
 
 .texto p{
@@ -77,4 +72,8 @@ Button{
 
 .texto h1{
     color:rgb(187, 8, 8);
+    display: flex;
+
+    justify-content: center;
+
 }

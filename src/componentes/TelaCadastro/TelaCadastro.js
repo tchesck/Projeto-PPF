@@ -3,11 +3,11 @@ import './TelaCadastro.scss';
 import Container from '../../componentes/Container/Container.js';
 
 
+
 const TelaCadastro = () => {
   
       return (
         <div className="TelaCadastro">
-          
           <Container 
           texto="Ainda não possui cadastro?"
           subTexto="Clique abaixo e junte-se a nós"
