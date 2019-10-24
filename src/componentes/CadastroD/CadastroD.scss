@@ -1,0 +1,44 @@
+.NovoCad{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    background-image: url(../../imagem/livross.jpg);
+    background-size: cover;
+  
+  }
+   .Cadastro {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: rgb(0, 0, 0) transparent;
+      width: 50%;
+      height: 50%; 
+      border-radius: 40px;
+         form {
+           margin-left: 50px;
+           display: flex;
+           align-items: flex-end;
+           justify-content: center;
+           flex-direction: column;
+          
+        button{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
+          height: 30px;
+          width: 110px;
+          border: 1px solid red;
+          }
+        }
+        }
+  .Imagem{
+    h1{
+      color:white;
+      margin-bottom: 50px;
+  
+    } }

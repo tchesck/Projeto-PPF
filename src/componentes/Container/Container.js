@@ -12,8 +12,8 @@ const Container = ({texto, subTexto, doador, escola}) => {
                     <h1>{texto}</h1>
                     <h2>{subTexto}</h2>
                 </div>
-                <Link to="/login-doador"> <Botao>{doador}</Botao></Link>
-                <Link to="/login-escola"> <Botao>{escola}</Botao></Link>
+                <Link to="/Cadastro-doador"> <Botao>{doador}</Botao></Link>
+                <Link to="/Cadastro-escola"> <Botao>{escola}</Botao></Link>
             </div>
         </div>
        
