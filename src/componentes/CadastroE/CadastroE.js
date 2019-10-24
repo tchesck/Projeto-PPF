@@ -1,6 +1,6 @@
 import React, { useState, } from "react";
-import Input from '../input/Input.js';
-import "../cadastroE/cadastroE.scss";
+import Input from '../../componentes/Input/Input.js';
+import "../../componentes/CadastroE/CadastroE.scss";
 
 const CadastroE = () => {
   const [nome, setNome] = useState(""); 
@@ -15,8 +15,8 @@ const CadastroE = () => {
   };
 
    return (
-    <div className="NovoCad" >
-     <div className="Cadastro">
+    <div className="NovoCadDois" >
+     <div className="CadastroDois">
        <div className="Imagem">
        <h1>Faça seu cadastro de Escola</h1>
        
@@ -55,7 +55,7 @@ const CadastroE = () => {
            obrigatorio
          />
 
-         <button>Cadastrar</button>
+         <button className='BUm'>Cadastrar</button>
       </form>
     </div>
     </div>

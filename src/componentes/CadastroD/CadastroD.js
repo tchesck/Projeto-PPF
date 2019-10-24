@@ -1,6 +1,6 @@
 import React, { useState, } from "react";
 import Input from '../../componentes/Input/Input.js';
-
+import '../CadastroD/CadastroD.scss';
 
 
 const CadastroD = () => {
@@ -13,8 +13,8 @@ const CadastroD = () => {
   const handleSubmit = e => {
   }
    return (
-     <div className="NovoCad" >
-     <div className="Cadastro">
+     <div className="NovoCadUm" >
+     <div className="CadastroUm">
        <div className="Imagem">
        <h1>Faça seu cadastro de Doador</h1>
        </div>

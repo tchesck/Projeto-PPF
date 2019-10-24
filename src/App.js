@@ -5,6 +5,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import Navbar from '../src/componentes/Navbar/Navbar.js'
 import Cadastro from './componentes/TelaCadastro/TelaCadastro.js';
 import FormDoador from '../src/componentes/CadastroD/CadastroD.js';
+import FormEscola from '../src/componentes/CadastroE/CadastroE.js';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Route exact path="/" component={Home} />
       <Route path="/Cadastro" component={Cadastro} />
       <Route path="/Cadastro-doador" component={FormDoador} />
+      <Route path="/Cadastro-escola" component={FormEscola} />
       </BrowserRouter>
     </div>
   );
