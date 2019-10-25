@@ -4,23 +4,59 @@ import '../CadastroD/CadastroD.scss';
 
 
 const CadastroD = () => {
-  const [nome, setNome] = useState("");
-  const [email, setEmail] = useState("");
-  const [senha, setSenha] = useState("");
-  const [idade, setIdade] = useState("");
-  const [cpf, setCpf] = useState("");
+
+  const [nome, setNome] = React.useState("");
+  const [idade, setIdade] = React.useState("");
+  const [cpf, setCpf] = React.useState("");
+  const [cep, setCep] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [senha, setSenha] = React.useState("");
+
+  const salvarDoador = (event) =>{
+    event.preventDefault();
+
+    fetch('http://127.0.0.1:9000/Doador/',{
+      method: 'POST',
+      body:JSON.stringify({
+        nome: nome,
+        idade: idade,
+        cpf: cpf,
+        cep: cep,
+        email: email,
+        senha: senha,
+      }),
+      headers:{
+        'Content-Type': 'application/json'
+        }
+    }).then( value => {
+      return value.json()
+    }).then(value => {
+      if(value.id) {
+        alert('Doador criado com sucesso!');
+        
+      } else{
+        alert('Erro ao cadastrar!')
+      }
+      setNome("");
+      setIdade("");
+      setCpf("");
+      setCep("");
+      setEmail("");
+      setSenha("");
+    })
+  };
+
+
   
-  const handleSubmit = e => {
-  }
    return (
      <div className="NovoCadUm" >
      <div className="CadastroUm">
        <div className="Imagem">
        <h1>Faça seu cadastro de Doador</h1>
        </div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={salvarDoador}>
         <Input
-            value={nome}
+           value={nome}
             type="text"
             label="Nome"
             placeholder="Nome completo"
@@ -37,7 +73,7 @@ const CadastroD = () => {
          />
         
         <Input
-             value={cpf}
+           value={cpf}
              class="form-control cpf-mask"
              type="text"
              label="CPF"
@@ -51,7 +87,13 @@ const CadastroD = () => {
            label="Email"
            placeholder="Digite seu email"
            atualizarState={setEmail}
-         />
+         /><Input
+          value={cep}
+          type="text"
+          label="Cep"
+          placeholder="Digite seu cep"
+          atualizarState={setCep}
+        />
          <Input
            value={senha}
            type="password"
@@ -61,13 +103,13 @@ const CadastroD = () => {
            obrigatorio
          />
 
+         <input type="submit" className="BDOis" value="Cadastrar" />
 
-         <button>Cadastrar</button>
       </form>
     </div>
     </div>
   );
-};
+   }
 
 
 
